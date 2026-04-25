@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wire Code — Full-stack розробка під ключ | Сайти, Боти, WebApp</title>
+  <meta name="description" content="Wire Code — мікро-студія розробки. Створюємо сайти, Telegram та Viber ботів, веб-додатки та цифрові рішення для бізнесу. Швидко, якісно, під ключ.">
+  <meta name="keywords" content="розробка сайтів, telegram бот, viber бот, webapp, full-stack, Львів, wire code">
+  <meta property="og:title" content="Wire Code — Full-stack розробка під ключ">
+  <meta property="og:description" content="Сайти, боти, веб-додатки та цифрові рішення для бізнесу">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wirecode.space">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+<canvas id="lightning-canvas"></canvas>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#" class="nav-logo">
+      <div class="logo-icon"><img src="assets/wirecode_logo.jpg" alt="Wire Code"></div>
+      Wire<span class="accent">Code</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#services">Послуги</a></li>
+      <li><a href="#portfolio">Портфоліо</a></li>
+      <li><a href="#process">Процес</a></li>
+      <li><a href="#tech">Технології</a></li>
+      <li><a href="#reviews">Відгуки</a></li>
+    </ul>
+    <a href="https://t.me/wire_code" target="_blank" class="nav-cta desktop">Написати</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <canvas id="particles-canvas"></canvas>
+  <div class="container hero-content">
+    <div class="hero-badge">
+      <span class="pulse"></span>
+      Доступний для нових проєктів
+    </div>
+    <div class="hero-typing" id="heroTyping"></div>
+    <h1>
+      Перетворюємо ваші <span class="gradient-text">ідеї</span> в працюючий <span class="gradient-text">код</span>
+    </h1>
+    <p class="hero-desc">
+      Full-stack розробка під ключ — від Telegram ботів до масштабних веб-додатків. 
+      Швидко. Якісно. З душею.
+    </p>
+    <div class="hero-buttons">
+      <a href="https://t.me/wire_code" target="_blank" class="btn-primary">
+        💬 Обговорити проєкт
+      </a>
+      <a href="#portfolio" class="btn-secondary">
+        Переглянути роботи →
+      </a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-number" data-target="3">0</div>
+        <div class="stat-label">роки досвіду</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number" data-target="50">0</div>
+        <div class="stat-label">виконаних проєктів</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number" data-target="30">0</div>
+        <div class="stat-label">задоволених клієнтів</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="container">
+    <div class="fade-up">
+      <div class="section-label">Послуги</div>
+      <h2 class="section-title">Що я можу для вас <span class="gradient-text">створити</span></h2>
+      <p class="section-subtitle">Від простого лендінгу до складної бізнес-системи — підберу оптимальне рішення під ваш бюджет і задачі.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-up">
+        <div class="service-icon">🤖</div>
+        <h3>Telegram & Viber Боти</h3>
+        <p>Чат-боти для автоматизації бізнесу, прийому замовлень, розсилок та обслуговування клієнтів. Mini Apps з кастомним інтерфейсом.</p>
+        <span class="service-tag">від 500 грн</span>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon">🌐</div>
+        <h3>Сайти & Landing Pages</h3>
+        <p>Адаптивні, швидкі та красиві сайти-візитівки, лендінги та корпоративні сайти. Сучасний дизайн, що продає.</p>
+        <span class="service-tag">від 1000 грн</span>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon">📱</div>
+        <h3>Web Applications</h3>
+        <p>Повноцінні веб-додатки — дашборди, CRM, панелі адмінки, SPA. Складна логіка, real-time дані, інтеграції.</p>
+        <span class="service-tag">від 3000 грн</span>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-icon">⚡</div>
+        <h3>Цифрові рішення</h3>
+        <p>API інтеграції, парсери, автоматизація процесів, Telegram WebApp, скрипти та будь-які нестандартні задачі.</p>
+        <span class="service-tag">індивідуально</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE STRIP -->
+<div class="marquee-strip">
+  <div class="marquee-inner" id="marquee">
+    <span><i class="dot"></i>Telegram Боти</span>
+    <span><i class="dot"></i>Viber Боти</span>
+    <span><i class="dot"></i>Landing Pages</span>
+    <span><i class="dot"></i>Web Applications</span>
+    <span><i class="dot"></i>API Інтеграції</span>
+    <span><i class="dot"></i>Mini Apps</span>
+    <span><i class="dot"></i>Дашборди</span>
+    <span><i class="dot"></i>Автоматизація</span>
+    <span><i class="dot"></i>Telegram Боти</span>
+    <span><i class="dot"></i>Viber Боти</span>
+    <span><i class="dot"></i>Landing Pages</span>
+    <span><i class="dot"></i>Web Applications</span>
+    <span><i class="dot"></i>API Інтеграції</span>
+    <span><i class="dot"></i>Mini Apps</span>
+    <span><i class="dot"></i>Дашборди</span>
+    <span><i class="dot"></i>Автоматизація</span>
+  </div>
+</div>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="container">
+    <div class="fade-up">
+      <div class="section-label">Портфоліо</div>
+      <h2 class="section-title">Останні <span class="gradient-text">проєкти</span></h2>
+      <p class="section-subtitle">Кожен проєкт — це індивідуальний підхід, сучасний дизайн та чистий код.</p>
+    </div>
+    <div class="portfolio-grid">
+      <div class="portfolio-card fade-up">
+        <div class="portfolio-preview">
+          <img src="assets/project-bot.webp" alt="Telegram бот для бізнесу" onerror="this.style.display='none';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;background:linear-gradient(135deg,rgba(0,240,255,0.1),rgba(123,97,255,0.1))\'><span style=\'font-size:4rem\'>🤖</span></div>'">
+          <div class="portfolio-overlay"><span>Переглянути →</span></div>
+        </div>
+        <div class="portfolio-info">
+          <h3>Telegram Бот — Автоматизація замовлень</h3>
+          <p>Бот для онлайн-магазину з каталогом, кошиком, оплатою та сповіщеннями адміну в реальному часі.</p>
+          <div class="portfolio-tags"><span>Node.js</span><span>Telegram API</span><span>MongoDB</span></div>
+        </div>
+      </div>
+      <div class="portfolio-card fade-up">
+        <div class="portfolio-preview">
+          <img src="assets/project-site.webp" alt="Корпоративний сайт" onerror="this.style.display='none';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;background:linear-gradient(135deg,rgba(123,97,255,0.1),rgba(0,255,136,0.1))\'><span style=\'font-size:4rem\'>🌐</span></div>'">
+          <div class="portfolio-overlay"><span>Переглянути →</span></div>
+        </div>
+        <div class="portfolio-info">
+          <h3>Сайт транспортної компанії</h3>
+          <p>Преміальний лендінг з калькулятором вартості, онлайн-бронюванням та інтеграцією з Google Maps.</p>
+          <div class="portfolio-tags"><span>Next.js</span><span>React</span><span>Vercel</span></div>
+        </div>
+      </div>
+      <div class="portfolio-card fade-up">
+        <div class="portfolio-preview">
+          <img src="assets/project-webapp.webp" alt="Web Application" onerror="this.style.display='none';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;background:linear-gradient(135deg,rgba(0,255,136,0.1),rgba(0,240,255,0.1))\'><span style=\'font-size:4rem\'>📊</span></div>'">
+          <div class="portfolio-overlay"><span>Переглянути →</span></div>
+        </div>
+        <div class="portfolio-info">
+          <h3>Дашборд аналітики продажів</h3>
+          <p>Веб-додаток для моніторингу KPI, візуалізації даних та автоматичної генерації звітів.</p>
+          <div class="portfolio-tags"><span>React</span><span>Chart.js</span><span>PostgreSQL</span></div>
+        </div>
+      </div>
+      <div class="portfolio-card fade-up">
+        <div class="portfolio-preview">
+          <img src="assets/project-miniapp.webp" alt="Telegram Mini App" onerror="this.style.display='none';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;background:linear-gradient(135deg,rgba(251,191,36,0.1),rgba(123,97,255,0.1))\'><span style=\'font-size:4rem\'>📱</span></div>'">
+          <div class="portfolio-overlay"><span>Переглянути →</span></div>
+        </div>
+        <div class="portfolio-info">
+          <h3>Telegram Mini App — Гра</h3>
+          <p>Інтерактивна картова гра всередині Telegram з анімаціями, мультикроковим інтерфейсом та шерінгом.</p>
+          <div class="portfolio-tags"><span>React</span><span>Telegram WebApp</span><span>CSS3</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTERACTIVE ORBS DIVIDER -->
+<div style="position:relative;height:80px;overflow:hidden">
+  <div class="interactive-orb cyan" style="right:20%;top:-100px"></div>
+  <div class="interactive-orb purple" style="left:10%;top:-80px"></div>
+</div>
+
+<!-- PROCESS -->
+<section id="process" style="position:relative">
+  <div class="interactive-orb green" style="right:5%;top:200px"></div>
+  <div class="container">
+    <div class="fade-up">
+      <div class="section-label">Як я працюю</div>
+      <h2 class="section-title">Від ідеї до <span class="gradient-text">запуску</span></h2>
+      <p class="section-subtitle">Прозорий процес на кожному етапі — ви завжди знаєте, що відбувається з вашим проєктом.</p>
+    </div>
+    <div class="process-timeline">
+      <div class="process-step">
+        <div class="step-number">01</div>
+        <div class="step-content">
+          <h3>💬 Обговорення ідеї</h3>
+          <p>Розповідаєте про свою задачу — я пропоную оптимальне технічне рішення, оцінюю терміни та бюджет. Безкоштовна консультація.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-number">02</div>
+        <div class="step-content">
+          <h3>📋 Технічне завдання</h3>
+          <p>Фіксуємо всі вимоги, функціонал та дизайн. Ви отримуєте чіткий план того, що буде зроблено.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-number">03</div>
+        <div class="step-content">
+          <h3>🎨 Дизайн та прототип</h3>
+          <p>Створюю макет і показую вам до початку розробки. Вносимо правки, поки все не буде ідеально.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-number">04</div>
+        <div class="step-content">
+          <h3>💻 Розробка</h3>
+          <p>Пишу чистий, швидкий код. Регулярно показую проміжний результат. Використовую сучасні технології.</p>
+        </div>
+      </div>
+      <div class="process-step">
+        <div class="step-number">05</div>
+        <div class="step-content">
+          <h3>🚀 Запуск та підтримка</h3>
+          <p>Деплою проєкт, налаштовую домен, даю інструкції. Надаю технічну підтримку після запуску.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECH STACK -->
+<section id="tech">
+  <div class="container">
+    <div class="fade-up">
+      <div class="section-label">Стек технологій</div>
+      <h2 class="section-title">Інструменти, якими я <span class="gradient-text">працюю</span></h2>
+      <p class="section-subtitle">Сучасний стек для швидкої та якісної розробки.</p>
+    </div>
+    <div class="tech-grid fade-up">
+      <div class="tech-item"><div class="tech-icon">⚛️</div><span>React</span></div>
+      <div class="tech-item"><div class="tech-icon">▲</div><span>Next.js</span></div>
+      <div class="tech-item"><div class="tech-icon">🟢</div><span>Node.js</span></div>
+      <div class="tech-item"><div class="tech-icon">🐍</div><span>Python</span></div>
+      <div class="tech-item"><div class="tech-icon">📘</div><span>TypeScript</span></div>
+      <div class="tech-item"><div class="tech-icon">🤖</div><span>Telegram API</span></div>
+      <div class="tech-item"><div class="tech-icon">🐘</div><span>PostgreSQL</span></div>
+      <div class="tech-item"><div class="tech-icon">🍃</div><span>MongoDB</span></div>
+      <div class="tech-item"><div class="tech-icon">🔥</div><span>Firebase</span></div>
+      <div class="tech-item"><div class="tech-icon">🐳</div><span>Docker</span></div>
+      <div class="tech-item"><div class="tech-icon">▼</div><span>Vercel</span></div>
+      <div class="tech-item"><div class="tech-icon">🎨</div><span>Figma</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="reviews">
+  <div class="container">
+    <div class="fade-up">
+      <div class="section-label">Відгуки</div>
+      <h2 class="section-title">Що кажуть <span class="gradient-text">клієнти</span></h2>
+      <p class="section-subtitle">Реальні відгуки від людей, з якими я працював.</p>
+    </div>
+    <div class="testimonials-track fade-up">
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <blockquote>"Замовляв Telegram бота для свого магазину. Андрій зробив все дуже швидко і якісно — бот працює ідеально, клієнти в захваті. Рекомендую!"</blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">О</div>
+          <div><div class="testimonial-name">Олег К.</div><div class="testimonial-role">Власник інтернет-магазину</div></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <blockquote>"Потрібен був сайт для транспортної компанії — отримав набагато більше, ніж очікував. Калькулятор, онлайн-бронювання, преміальний дизайн. Топ!"</blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">М</div>
+          <div><div class="testimonial-name">Марія С.</div><div class="testimonial-role">Менеджер Comfort Plus</div></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <blockquote>"Працюємо з Андрієм вже більше року. Зробив нам дашборд аналітики, декілька ботів та лендінг. Все чітко, завжди на зв'язку і готовий допомогти."</blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">Д</div>
+          <div><div class="testimonial-name">Дмитро В.</div><div class="testimonial-role">СЕО стартапу</div></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <blockquote>"Не розумів, що мені потрібно — Андрій допоміг визначитись з рішенням і реалізував все за тиждень. Дуже задоволений результатом і комунікацією."</blockquote>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">І</div>
+          <div><div class="testimonial-name">Ігор П.</div><div class="testimonial-role">Підприємець</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="contact">
+  <div class="container">
+    <div class="fade-up">
+      <h2>Готові <span class="gradient-text">почати проєкт</span>?</h2>
+      <p>Напишіть мені в Telegram — обговоримо вашу ідею та знайдемо оптимальне рішення. Консультація безкоштовна!</p>
+      <div class="cta-buttons">
+        <a href="https://t.me/wire_code" target="_blank" class="btn-primary">💬 Написати в Telegram</a>
+        <a href="https://wire-code.olx.ua/uk/home/" target="_blank" class="btn-secondary">📦 Профіль на OLX</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-logo">Wire<span class="gradient-text">Code</span></div>
+      <div class="footer-links">
+        <a href="https://t.me/wire_code" target="_blank">Telegram</a>
+        <a href="https://wire-code.olx.ua/uk/home/" target="_blank">OLX</a>
+        <a href="#services">Послуги</a>
+        <a href="#portfolio">Портфоліо</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2023–2026 Wire Code · Львів, Україна · Зроблено з ❤️</p>
+    </div>
+  </div>
+</footer>
+
+<!-- AI CHAT WIDGET -->
+<button class="chat-toggle" id="chatToggle" aria-label="Відкрити чат"><img src="assets/wirecode_logo.jpg" alt="Wire Code"></button>
+<div class="chat-popup" id="chatPopup">
+  <button class="popup-close" id="popupClose">✕</button>
+  👋 Привіт! Потрібна допомога з проєктом? Я підкажу, яке рішення вам підійде найкраще!
+</div>
+<div class="chat-window" id="chatWindow">
+  <div class="chat-header">
+    <div class="chat-avatar"><img src="assets/wirecode_logo.jpg" alt="Wire Code"></div>
+    <div class="chat-header-info">
+      <h4>Wire AI Помічник</h4>
+      <p>Онлайн</p>
+    </div>
+    <button class="chat-close" id="chatClose">✕</button>
+  </div>
+  <div class="chat-messages" id="chatMessages"></div>
+  <div class="chat-options" id="chatOptions"></div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
